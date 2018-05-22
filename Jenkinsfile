@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+		sh 'rm -rf node_modules'
             }
         }
         stage('Deploy') {
